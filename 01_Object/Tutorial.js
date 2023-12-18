@@ -1,4 +1,5 @@
 //const JsUser={} #object
+//Object Literals
 const mysym= Symbol("key1")
 
 const JsUser={
