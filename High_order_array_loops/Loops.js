@@ -75,15 +75,52 @@
 //    // }
 
 
-// const map = new Map()
-// map.set('IN',"India")
-// map.set('USA',"United state of america")
-// map.set('Fr',"France")
-// map.set('IN',"India")
+//  const map = new Map()
+//  map.set('IN',"India")
+//  map.set('USA',"United state of america")
+//  map.set('Fr',"France")
+//  map.set('IN',"India")
 
-// for (const key in map) {
-//     console.log(key);
+//  for (const key in map) {
+//      console.log(key); //output nothng as map is not itrarible
+//  }
+
+
+//const coding=["js","Ruby","java","python","cpp"]
+
+// coding.forEach(function (val){
+//     console.log(val);
+// })//call back function 
+
+// coding.forEach((item)=>{
+//       console.log(item);
+// })//using arrow function
+
+// function printMe(item){
+//     console.log(item);
 // }
+//coding.forEach(printMe)//giving function referance
 
+// coding.forEach( (item, index, arr)=>{
+//   console.log(item, index, arr);
+// })
 
-const coding=[]
+const myCoding = [
+    {
+        languageName :"Javascript",
+        languageFileName:"js"
+    },
+    {
+        languageName :"Java",
+        languageFileName:"Java"
+    },
+    {
+        languageName :"Python",
+        languageFileName: "py"
+    }
+]
+
+myCoding.forEach((item)=>{
+
+    console.log(item.languageFileName);
+})
