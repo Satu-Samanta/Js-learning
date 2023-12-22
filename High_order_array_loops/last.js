@@ -29,7 +29,7 @@ const book = [
      edition: 2004},
      {title: 'Book Two',genre: 'Non-Fiction', publish: 1992,
      edition: 2008},
-     {title: 'Book Three',genre: 'Fiction', publish: 1999,
+     {title: 'Book Three',genre: 'History', publish: 1999,
      edition: 2007},
      {title: 'Book Four',genre: 'Non-Fiction', publish: 1989,
      edition: 2010},
@@ -44,6 +44,10 @@ const book = [
      {title: 'Book Nine',genre: 'Non-Fiction', publish: 1981,
      edition: 1989}
 ]
-const userbooks = bool.filter( () =>)
+//const userbooks = book.filter( (bk) =>bk.genre === 'History')let  userbooks = book.filter( (bk) =>bk.genre === 'History')
+//console.log(userbooks);
 
+
+let  userbooks = book.filter( (bk) =>{
+    return bk.publish >= 2000 && bk.title ==='Book Five'})
 console.log(userbooks);
