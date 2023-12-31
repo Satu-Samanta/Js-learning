@@ -31,11 +31,32 @@ if(acc[curr.age]){
   
 }
 return acc;
-},{});
+},[]);
 
-console.log(output);
+// console.log(output);
 
 
 // console.log(users.firstName); // Output: Akshay
 // console.log(users[1].lastName);  // Output: Trumph
 // console.log(users[2].age);       // Output: 50
+
+// const ageCount = users.reduce((acc, curr) => {
+//     acc[curr.age] = (acc[curr.age] || 0) + 1;
+//     return acc;
+// }, {});
+
+// console.log(ageCount);
+
+// const usersByAge = users.reduce((acc, curr) => {
+//     acc[curr.age] = curr;
+//     return acc;
+// }, {});
+
+// console.log(usersByAge);
+// const ageGroupedUsers = users.reduce((acc, curr) => {
+//     acc[curr.age] = acc[curr.age] || []; // Initialize an array if it doesn't exist
+//     acc[curr.age].push(curr);
+//     return acc;
+// }, {});
+
+// console.log(ageGroupedUsers);
